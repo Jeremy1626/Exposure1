@@ -63,6 +63,7 @@ public class Table {
         }else{
             this.weight = 1000;
         }
+    }
 
     public void setPrice(double price) {
         this.price = price;
