@@ -7,11 +7,11 @@ package Objects;
 
 public class Table {
     // Attributes - variable
-    double height;
-    double width;
-    double weight;
-    double price;
-    double length;
+    private double height;
+    private double width;
+    private double weight;
+    private double price;
+    private double length;
 
     // Default Constructor - Special method
     // name of the method = the name of the class
@@ -52,17 +52,25 @@ public class Table {
     public void setHeight(double height) {
         this.height = height;
     }
+
     public void setWidth(double width) {
         this.width = width;
     }
+
     public void setWeight(double weight) {
-        this.weight = weight;
-    }
+        if(weight <= 1000) {
+            this.weight = weight;
+        }else{
+            this.weight = 1000;
+        }
+
     public void setPrice(double price) {
         this.price = price;
     }
+
     public void setLength(double length) {
         this.length = length;
     }
+
 
 }
